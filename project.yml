@@ -2,7 +2,7 @@ packages:
     - name: rso-iota-hook
       functions:
         - name: hook-controller
-          runtime: nodejs:default
-          main: hook-controller.js
+          runtime: python:default
+          main: hook-controller.py
           parameters:
             DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
