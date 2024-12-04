@@ -3,6 +3,7 @@ packages:
       functions:
         - name: hook-controller
           runtime: nodejs:default
+          source: packages/rso-iota-hook/hook-controller
           main: hook-controller.js
           parameters:
             DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
