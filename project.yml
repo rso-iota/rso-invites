@@ -1,8 +1,8 @@
 packages:
     - name: rso-iota-hook
       functions:
-        - name: rso-iota-hook
+        - name: hook-controller
           runtime: nodejs:default
-          main: index.js
+          main: hook-controller.js
           parameters:
             DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
