@@ -1,8 +1,0 @@
-{
-  "name": "hook-controller",
-  "version": "1.0.0",
-  "main": "hook-controller.js",
-  "dependencies": {
-    "node-fetch": "^3.3.0"
-  }
-}
