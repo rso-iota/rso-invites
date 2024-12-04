@@ -1,5 +1,5 @@
 packages:
-    - name: rso-invites
+    - name: rso-iota-hook
       functions:
         - name: invite
           runtime: nodejs:default
