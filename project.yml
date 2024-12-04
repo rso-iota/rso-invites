@@ -1,6 +1,8 @@
-functions:
-  - name: rso-iota-hook
-    runtime: nodejs:default
-    main: index.js
-    parameters:
-      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
+packages:
+    - name: rso-iota-hook
+      functions:
+        - name: rso-iota-hook
+          runtime: nodejs:default
+          main: index.js
+          parameters:
+            DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
