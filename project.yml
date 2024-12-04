@@ -3,6 +3,6 @@ packages:
       functions:
         - name: hook-controller
           runtime: python:default
-          main: hook-controller.py
+          main: ""
           parameters:
             DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
