@@ -9,6 +9,10 @@ def main(args):
     webhook_url = args.get("DISCORD_WEBHOOK_URL")
     if not webhook_url:
         return {"error": "Missing Discord webhook URL"}
+    avatar_url = args.get(
+        "avatar_url",
+        "https://i1.rgstatic.net/ii/profile.image/11431281236739734-1713351820088_Q512/Ziga-Lesar-2.jpg",
+    )
 
     try:
         response = requests.post(
@@ -16,6 +20,7 @@ def main(args):
             json={
                 "content": f"🎮 New game lobby!\nJoin here: {url}\n\nClick the link to join the game!",
                 "username": "Game Invite Bot",
+                "avatar_url": avatar_url,
             },
         )
         response.raise_for_status()
