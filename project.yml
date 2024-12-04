@@ -3,6 +3,6 @@ packages:
       functions:
         - name: invite
           runtime: nodejs:default
-          source: .
+          main: index.js
           parameters:
             DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
